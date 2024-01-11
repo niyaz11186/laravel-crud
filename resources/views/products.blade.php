@@ -16,10 +16,10 @@
     <table class="table">
         <thead>
           <tr>
-            <th scope="col">#</th>
+            <th scope="col">Product Code</th>
             <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">Quantiy </th>
+            <th scope="col">Price</th>
             <th scope="col">Description</th>
             <th scope="col">Photo</th>
             <th scope="col">Color</th>
@@ -33,7 +33,7 @@
                 
           
           <tr>
-            <th scope="row">{{$product->id}}</th>
+            <th scope="row">{{$product->prod_code}}</th>
             <td>{{$product->name}}</td>
             <td>{{$product->qty}}</td>
             <td>{{$product->price}}</td>

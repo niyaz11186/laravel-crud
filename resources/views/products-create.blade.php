@@ -51,14 +51,16 @@
                 </label>
               </div>
              </div>
-             <select class="form-select" name="stuff" aria-label="Default select example">
-              <option selected>Open this select menu</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+             <label for="">Atribute</label>
+             <select name="stuff" id="attribute" class="custom-select">
+              @foreach ($attributes as $attribute)
+                  
+           
+              <option value="{{$attribute->value}}">{{$attribute->name}} -- {{$attribute->value}}</option>
+    
+              @endforeach
             </select>
 
-             </select>
             <div class="col-12">
                 <input type="submit"  value="submit" placeholder="submit" class="btn btn-primary">
                 {{-- <button type="submit" class="btn btn-primary">Sign in</button> --}}
